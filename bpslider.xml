@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>BluePro Slider</name>
+	<creationDate>2013-05-25</creationDate>
+	<author>Ondřej Hlaváč (BluePro)</author>
+	<authorEmail>ondrej@hlavacovi.net</authorEmail>
+	<authorUrl>http://ondrej.hlavacovi.net</authorUrl>
+	<copyright>Ondřej Hlaváč 2013</copyright>
+	<license>GNU/GPL</license>
+	<version>2.0</version>
+	<description>Mootools slider</description>
+	
+	<files>
+		<filename plugin="bpslider">bpslider.php</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                                <field name="search_limit" type="text"
+                                        default="50"
+                                        description="JFIELD_PLG_SEARCH_SEARCHLIMIT_DESC"
+                                        label="JFIELD_PLG_SEARCH_SEARCHLIMIT_LABEL"
+                                        size="5"
+                                />
+				<field name="show_first" type="list" default="1" label="Zobrazit první blok" description="Po načtení stránky zobrazit první blok rozbalený">
+					<option value="0">Ne</option>
+					<option value="1">Ano</option>
+				</field>
+				<field name="first_transition" type="list" default="0" label="Animace prvního bloku" description="Po načtení stránky zobrazit první blok s animací">
+					<option value="0">Ne</option>
+					<option value="1">Ano</option>
+				</field>
+				<field name="always_hide" type="list" default="1" label="Skrytí všech bloků" description="Umožní skrýt všechny rozbalené bloky">
+					<option value="0">Ne</option>
+					<option value="1">Ano</option>
+				</field>
+				<field name="duration" type="list" default="500" label="Délka animace" description="Délka animace rozbalování">
+					<option value="250">Krátká</option>
+					<option value="500">Střední</option>
+					<option value="900">Dlouhá</option>
+				</field>
+				<field name="transition" type="list" default="0" label="Efekt" description="Type animace">
+					<option value="0">Zpomalení</option>
+					<option value="Bounce">Odskok</option>
+					<option value="Elastic">Pružina</option>
+					<option value="Back">Odraz</option>
+				</field>
+				<field name="opacity" type="list" default="1" label="Průhlednost" description="Měnit průhlednost při přepínání mezi bloky">
+					<option value="0">Ne</option>
+					<option value="1">Ano</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

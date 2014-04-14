@@ -1,4 +1,1 @@
-bp-plg-slider
-=============
-
-Joomla! Slider plugin
+#Joomla! Slider plugin
